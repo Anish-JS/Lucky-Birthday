@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-:root{
-    --primary-dark:#1F2937;
-    --primary-green:#6EE7B7;
+:root {
+  --primary-dark: #1f2937;
+  --primary-green: #6ee7b7;
 }
 
 * {
@@ -10,59 +10,59 @@
   padding: 0;
 }
 
-body{
-    background-color: var(--primary-dark);
-    color: var(--primary-green);
-    font-family: 'Montserrat', sans-serif;;
+body {
+  background-color: var(--primary-dark);
+  color: var(--primary-green);
+  font-family: "Montserrat", sans-serif;
 }
 
-h1{
-    text-align: center;
-    margin:1rem;
+h1 {
+  text-align: center;
+  margin: 1rem;
 }
-.container{
-    margin: auto;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-}
-
-
-input,label{
-    display: block;
-    font-size: 1.2rem;
-    margin: 0.3rem;
+.container {
+  margin: auto;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
 }
 
-input{
-    margin-bottom: 0.8rem;
-    width: 100%;
+input,
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin: 0.3rem;
 }
 
-
-#check-number{
-margin: 1rem auto;
-display: block;
-padding: 0.2rem;
-background-color: transparent;
-color: var(--primary-green);
-border-color: var(--primary-green);
-border-width: medium;
-padding: 0.5rem;
-border-radius: 0.5rem;
+input {
+  margin-bottom: 0.8rem;
+  width: 100%;
 }
 
-.socials{
-    text-align: center;
-    margin: 1rem;
+#check-number {
+  margin: 1rem auto;
+  display: block;
+  padding: 0.2rem;
+  background-color: transparent;
+  color: var(--primary-green);
+  border-color: var(--primary-green);
+  border-width: medium;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
-p{
-    margin-bottom: 1rem;
+
+.socials {
+  text-align: center;
+  margin: 1rem;
+  display: flex;
 }
-a{
-    text-decoration: none;
-    color:inherit;
+p {
+  margin-bottom: 1rem;
 }
-span{
-    padding: 1rem;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+span {
+  padding: 1rem;
 }
