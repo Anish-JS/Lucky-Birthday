@@ -7,25 +7,25 @@ const getValues = () => {
   console.log(dateOfBirth.value, luckyNumber.value);
 };
 
+const compareValues = (sum, luckyNumber) => {
+  if (sum % luckyNumber.value === 0) {
+    outputBox.innerText = "Your birthday is lucky!! 🥳";
+  } else {
+    outputBox.innerText = "Your birthday is not lucky";
+  }
+};
 const checkBirthDateIsLucky = () => {
   const dob = dateOfBirth.value;
   const sum = calculateSum(dob);
-  if (sum && dob) {
-    if (sum % luckyNumber.value === 0) {
-      outputBox.innerHTML = "Your birthday is lucky 🎉";
-    } else outputBox.innerHTML = "Your birthday is not lucky 🙃";
-  } else outputBox.innerHTML = "Please enter both fields";
+  compareValues(sum, luckyNumber);
 };
 
 const calculateSum = (dob) => {
-  dob = Number(dob.replaceAll("-", ""));
+  dob = dob.replaceAll("-", "");
   let sum = 0;
-
-  while (dob != 0) {
-    sum = sum + (dob % 10);
-    date = Math.trunc(dob / 10);
+  for (let index = 0; index < dob.length; index++) {
+    sum = sum + Number(dob.charAt(index));
   }
-  console.log(sum);
   return sum;
 };
 
