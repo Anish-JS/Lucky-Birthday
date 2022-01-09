@@ -9,9 +9,9 @@ const getValues = () => {
 
 const compareValues = (sum, luckyNumber) => {
   if (sum % luckyNumber.value === 0) {
-    outputBox.innerText = "Your birthday is lucky!! 🥳";
+    outputBox.innerText = `Your birthday is lucky!! 🥳`;
   } else {
-    outputBox.innerText = "Your birthday is not lucky";
+    outputBox.innerText = `Your birthday is not lucky`;
   }
 };
 const checkBirthDateIsLucky = () => {
@@ -21,7 +21,7 @@ const checkBirthDateIsLucky = () => {
 };
 
 const calculateSum = (dob) => {
-  dob = dob.replaceAll("-", "");
+  let dob = dob.replaceAll("-", "");
   let sum = 0;
   for (let index = 0; index < dob.length; index++) {
     sum = sum + Number(dob.charAt(index));
